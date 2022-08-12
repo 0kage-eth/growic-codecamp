@@ -24,6 +24,7 @@
    ***
 
 2. **Task 2 - Use mappings to store balances of users.**
+
    _Balance deposit and checker_
 
    - `deposit (uint256 _amount)` this function accepts one argument and it saves the amount a user is depositing into a mapping,
@@ -32,3 +33,17 @@
    **Refer to [02-TaskMappings.sol](./02-TaskMappings.sol)**
 
    ***
+
+3. **Task 3 - Use struct to store user details and balances.**
+
+   _User registry with balance and user details_
+
+   - create a struct `UserInfo` that captures balance, name and age of user
+   - `deposit (uint256 _amount)` this function accepts one argument and it saves the amount a user is depositing into a mapping,
+   - `withdraw(uint256 _amount)` function takes amount and reduces balances against a given user. Do error handling if withdrawal amount > current balance
+   - `setUserDetails(string calldata _name, uint8 _age)` sets user details for user address originating txn, including name and age
+   - `modifyUserDetails(string calldata _name, uint8 _age)` modifies user details including name and age
+   - `deleteUserDetails()` delete user details of msg.sender
+   - `checkBalance()` this function searches for the user balance inside the balance mapping and returns the balance of whoever is calling the contract.
+
+   **Refer to [03-TaskStructs.sol](./03-TaskStructs.sol)**
