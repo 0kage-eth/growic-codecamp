@@ -120,11 +120,12 @@ contract StudentData{
 
         // resetting the element in mapping to default values
         // note that there is no deletion of mapping
-        s_studentMap[_studentId].name="";
-        s_studentMap[_studentId].age=0;
+        delete s_studentMap[_studentId];
 
         // cast the variable ack to uint256 - this is fine because we reach here only if index != -1
         delete s_students[uint256(index)];
+
+        return true;
     }
 
 
