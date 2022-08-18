@@ -79,3 +79,29 @@
     Refer to code [05-TaskEvents.sol](./05-TaskEvents.sol) for further details
 
     ***
+
+6.  **Task 6 - Use inheritance to create a ERC-20 token=**
+
+    _Inherit a ERC 20 contract of [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts)_
+
+    - Import OpenZeppelin contract by running following
+
+               $yarn add --dev import "@openzeppelin/contracts"
+
+    - Inherit KageToken from ERC20
+    - Override the `decreaseAllowance()` function defined in ERC20 contract and write custom logic
+
+    Refer to code [06-TaskERC20.sol](./06-TaskERC20.sol) for further details
+
+    ***
+
+7.  **Task 7 - Use Payable modifier to deposit/withdraw funds to/from contract**
+
+    _Payable modifier to transfer funds from/to contract address_
+
+    - Attach a payable modifier to `s_owner`. This is helpful to withdraw funds from contract
+    - Attach a payable modifier to `deposit` function. This is helpful to transfer funds into the contract
+
+    Refer to code [07-TaskPayable.sol](./07-TaskPayable.sol) for further details
+
+    ***
