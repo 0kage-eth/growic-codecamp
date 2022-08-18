@@ -105,3 +105,17 @@
     Refer to code [07-TaskPayable.sol](./07-TaskPayable.sol) for further details
 
     ***
+
+8.  **Task 8 - Use fallback functions to ensure contract can receive payments**
+
+    _Ensure contract can receive payments by modifying `fallback()` and `receive()` functions_
+
+    - Define fallback() with a payable modifier. This allows contract to accept payments even if no transfer functions are defined
+
+    - `fallback()` gets called when function does not exist in contract & when msg.data has some value
+    - `receive()` is another callback function that gets called when external accounts want to send money to current address & when msg.data is empty
+    - To capture exact behavior, it is very useful to look at logs generated. I have logged emitted events by defining a `Log` event
+
+    Refer to code [08-TaskFallback.sol](./08-TaskFallback.sol) for further details
+
+    ***
