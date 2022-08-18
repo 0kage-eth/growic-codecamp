@@ -52,7 +52,7 @@
 
 4.  **Task 4 - Use modifiers to insert logic before or after a function call**
 
-    _Check if a contract is in pause state & if numbers are out of range before executing function logic_
+    _Use modifiers Check if a contract is in pause state & if numbers are out of range before executing function logic_
 
     - create a counter with `increment` and `decrement` functions that increase/decrese a stored value by a specific number
     - Have a state value `s_paused` - to execute any logic this state should be in `false` state
@@ -64,3 +64,18 @@
                       }
 
     - I've also written sample code for modifiers that take input variables & 'sandwich' modifiers where function logic can be sandwiched between a set of operations witin a function modifier
+
+    Refer to code [04-TaskModifiers.sol](./04-TaskModifiers.sol) for further details
+
+    ***
+
+5.  **Task 5 - Create and emit events from within contract functions**
+
+    _For exercise in task 3, add a `FundsDeposited(address, amount)` event and emit this event on deposit, and add a `ProfileUpdated(address)` event and emit this event everytime user details are updated_
+
+    - create `FundsDeposited(address,amount)` event and `ProfileUpdated(address)` event
+    - emit these events in `deposit` and `modifyUserDetails` functions respectively
+
+    Refer to code [05-TaskEvents.sol](./05-TaskEvents.sol) for further details
+
+    ***
